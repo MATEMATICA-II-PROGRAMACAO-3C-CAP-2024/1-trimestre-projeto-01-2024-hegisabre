@@ -3,7 +3,8 @@ const textos = document.querySelectorAll(".aba-conteudo");
 const contadores = document.querySelectorAll(".contador");
 const tempoObjetivo1 = new Date ("2024-10-05T00:00:")
 contadores[0]
-contadores[0].textContent= tempoObjetivo1;
+let tempoAtual = new Date ()
+contadores[0].textContent= calculaTempo
 
 for(let i=0;i <botoes.length;i++){ botoes[i].onclick = function() {
 
@@ -13,10 +14,12 @@ for(let i=0;i <botoes.length;i++){ botoes[i].onclick = function() {
     }
     botoes[i].classList.add("ativo");
     textos[i].classList.add("ativo");
-
-    }
-    }
-    const contadores = document.querySelectorAll(".contador");
-    const contadores = document.querySelectorAll(".contador");
-contadores[0]
-contadores[0].textContent = "Contagem regressiva";
+}
+}
+    function calculadoraTempo(tempoObjetivo)
+    let tempoAtual = new Date ()
+    let tempoFinal= tempoObjetivo - tempoAtural;
+    let segundo = Math.floor (tempoFinal / 1000);
+    let minutos = Math.floor (segundos/60);
+    
+    return segundos;
