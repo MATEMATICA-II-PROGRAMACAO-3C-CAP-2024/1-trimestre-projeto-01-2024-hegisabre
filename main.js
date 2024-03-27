@@ -26,7 +26,7 @@ for(let i=0;i <botoes.length;i++){ botoes[i].onclick = function() {
     segundos%=60; 
     minutos%=60;
     horas%24;
-    
+
 
     return dias + " dias " + horas + " horas " + minutos + " minutos " + segundos + "segundos";
 
