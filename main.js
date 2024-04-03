@@ -31,17 +31,22 @@ for(let i=0;i <botoes.length;i++){ botoes[i].onclick = function() {
     segundos%=60; 
     minutos%=60;
     horas%24;
+if (tempoFinal>0){
+return dias + "dias" + horas + "horas" + minutos + "minutos" + segundos + "segundos";
 
-
-    return dias + " dias " + horas + " horas " + minutos + " minutos " + segundos + "segundos";
-    }
+}
+else {
+    return "PRAZO FINALIZADO!";
+}
     function atualizaCronometro(){
     for (let i=0; i<contadores.length; i++){ 
         contadores[i].textContent = calculadoraTempo(tempo[i]);
        
     }
     }
+
+    function comecaCronometro {
 atualizaCronometro();
-setInterval(atualizaCronometro,1000);
-
-
+setInterval(atualizaCronometro, 1000);
+    }
+comecaCronometro ();
