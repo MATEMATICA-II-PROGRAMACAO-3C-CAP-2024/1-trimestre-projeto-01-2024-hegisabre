@@ -98,4 +98,7 @@ body {
     color: var(--verde);
     text-transform: uppercase;
 }
-
+.contador{
+    display:flex;
+    justify-content: center;
+    }
