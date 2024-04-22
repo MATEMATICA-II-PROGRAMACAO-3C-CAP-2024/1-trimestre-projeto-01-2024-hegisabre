@@ -36,11 +36,11 @@ return dias + "dias" + horas + "horas" + minutos + "minutos" + segundos + "segun
 
 }
 else {
-    return "PRAZO FINALIZADO!";
+    return [0,0,0,0];
 }
-    function atualizaCronometro(){
+    function atualizaCronometro(){document.getElementById("dias0").textContent= calculadoraTempo(tempos[0]);
     for (let i=0; i<contadores.length; i++){ 
-        contadores[i].textContent = calculadoraTempo(tempo[i]);
+      //  contadores[i].textContent = calculadoraTempo(tempo[i]);
        
     }
     }
