@@ -3,7 +3,7 @@
 :root {
     --cor-de-fundo:radial-gradient(circle, rgba(6,27,152,1) 0%, rgba(224,49,175,1) 100%);
 
-    --verde: #6FFF57;
+    --verde: black;
     --branco: #FFFFFF;
     --botao-ativo: #3A375E;
     --botao-inativo: rgba(58, 55, 94, 0.5);
@@ -64,7 +64,7 @@ body {
 
 .botao.ativo{
     background-color: var(--botao-ativo);
-    border-bottom: 4px solid var(--preto);
+    border-bottom: 4px solid var(--verde);
 }
 
 .abas-textos{
